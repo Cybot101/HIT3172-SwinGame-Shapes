@@ -44,7 +44,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(ProjectDir)\lib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\lib;$(ProjectDir)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -73,6 +73,7 @@ xcopy "$(ProjectDir)Resources" "$(OutDir)Resources" /E /I /Y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Shape.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="lib\Animations.cpp" />
     <ClCompile Include="lib\Audio.cpp" />
@@ -114,6 +115,7 @@ xcopy "$(ProjectDir)Resources" "$(OutDir)Resources" /E /I /Y</Command>
     <ClInclude Include="lib\Types.h" />
     <ClInclude Include="lib\UserInterface.h" />
     <ClInclude Include="lib\Utils.h" />
+    <ClInclude Include="Shape.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -78,6 +78,9 @@
     <ClCompile Include="lib\UserInterface.cpp">
       <Filter>Source Files\SwinGame</Filter>
     </ClCompile>
+    <ClCompile Include="Shape.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lib\Geometry.h">
@@ -139,6 +142,9 @@
     </ClInclude>
     <ClInclude Include="lib\UserInterface.h">
       <Filter>Header Files\SwinGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
