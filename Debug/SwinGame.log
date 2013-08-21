@@ -1,0 +1,81 @@
+﻿Build started 21/08/2013 9:22:26 PM.
+     1>Project "C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\SwinGame.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\\lib" /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt src\main.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Debug\SwinGame.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Debug\SwinGame.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Debug\SwinGame.lib" /MACHINE:X86 Debug\main.obj
+         Debug\Animations.obj
+         Debug\Audio.obj
+         Debug\Camera.obj
+         Debug\Characters.obj
+         Debug\Colors.obj
+         Debug\Geometry.obj
+         Debug\Graphics.obj
+         Debug\Images.obj
+         Debug\Input.obj
+         Debug\Networking.obj
+         Debug\Physics.obj
+         Debug\Resources.obj
+         Debug\SGSDK.obj
+         Debug\Sprites.obj
+         Debug\Text.obj
+         Debug\Timers.obj
+         Debug\UserInterface.obj
+         Debug\Utils.obj
+         SwinGame.vcxproj -> C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Debug\SwinGame.exe
+       PostBuildEvent:
+         xcopy "C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win" "C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Debug\" /E /I /Y
+         xcopy "C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources" "C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Debug\Resources" /E /I /Y
+         :VCEnd
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\.DS_Store
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\jpeg.dll
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\libfreetype-6.dll
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\libogg-0.dll
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\libpng12-0.dll
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\libpng13.dll
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\libtiff-3.dll
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\libvorbis-0.dll
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\libvorbisfile-3.dll
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\mikmod.dll
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\ogg.dll
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\SDL.dll
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\SDL_gfx.dll
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\SDL_image.dll
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\SDL_mixer.dll
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\SDL_net.dll
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\SDL_ttf.dll
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\SGSDK.dll
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\smpeg.dll
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\swingame.rc
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\lib\win\zlib1.dll
+         21 File(s) copied
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\.DS_Store
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\SwinGame.icns
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\SwinGame.ico
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\animations\.DS_Store
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\animations\startup.txt
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\bundles\FileDialog.txt
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\bundles\splash.txt
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\fonts\arial.ttf
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\fonts\cour.ttf
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\fonts\maven_pro_regular.ttf
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\images\.DS_Store
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\images\fdFile.png
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\images\fdFolder.png
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\images\FileDialog_Active.png
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\images\FileDialog_Background.png
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\images\FileDialog_Inactive.png
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\images\FileDialog_Scroll.png
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\images\FileDialog_ScrollSmall.png
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\images\Swinburne.jpg
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\images\SwinGameAni.png
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\panels\FileDialog.txt
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\sounds\error.wav
+         C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\Resources\sounds\SwinGameStart.wav
+         23 File(s) copied
+     1>Done Building Project "C:\Users\Kyle\Documents\University\2013\Semester 2\HIT2302 - OOP C++\SwinGame ProjectTemplate\SwinGame.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.27
