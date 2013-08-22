@@ -38,6 +38,8 @@ int main()
         
         draw_framerate(0,0);
         
+		shape_position->set_colour(ColorBlue);
+
 		shape_position->draw();
 
         refresh_screen();
@@ -46,5 +48,8 @@ int main()
     //close_audio();
     
     release_all_resources();
+
+	delete shape_position;
+
     return 0;
 }
