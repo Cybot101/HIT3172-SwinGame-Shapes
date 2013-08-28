@@ -1,5 +1,24 @@
-#pragma once
+/*************************************************************
+ *		SwinGame :: Shape Drawing Example
+ * 
+ * @author	Kyle Harris		9621121
+ * @version 
+ *
+ * for, HIT3172 Object Orientated Programming
+ *
+ * http://github.com/Cybot101/HIT3172-SwinGame-Shapes
+ *************************************************************
+ *
+ * Shape Class - Interface definition
+ *
+ * Defines the Shape class to build "shape" objects to be drawn and interacted
+ * with on the sceen.
+ *
+ * Shapes can have different colours, size, location, and can be 'checked for' at a location.
+ *
+ */
 
+// Boilerplate
 #ifndef _H_SHAPE
 #define _H_SHAPE
 

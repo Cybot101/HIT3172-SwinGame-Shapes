@@ -1,3 +1,18 @@
+/*************************************************************
+ *		SwinGame :: Shape Drawing Example
+ * 
+ * @author	Kyle Harris		9621121
+ * @version 
+ *
+ * for, HIT3172 Object Orientated Programming
+ *
+ * http://github.com/Cybot101/HIT3172-SwinGame-Shapes
+ *************************************************************
+ *
+ * Shape Class - Implementation
+ *
+ */
+
 #include "Shape.h"
 
 #include "Graphics.h"
