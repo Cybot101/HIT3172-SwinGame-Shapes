@@ -3,6 +3,7 @@
  * 
  * @author	Kyle Harris		9621121
  * @version 1.0			25/8/2013
+ * @version 1.5		7/9/2013	Added group selection option
  *
  * for, HIT3172 Object Orientated Programming
  *

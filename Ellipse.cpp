@@ -3,7 +3,7 @@
 void Ellipse::draw()
 {
 
-	draw_ellipse(
+	fill_ellipse(
 		_colour,									// Colour
 		_position.x, _position.y,
 		_width, _height	

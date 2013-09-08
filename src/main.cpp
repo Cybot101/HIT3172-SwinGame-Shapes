@@ -24,7 +24,7 @@
 
 int main()
 {
-    open_graphics_window("Hello World", 800, 600);
+    open_graphics_window("HIT3172 - SwinGame Shapes - Kyle Harris 9621121", 800, 600);
     load_default_colors();
 
 	// Create Drawing object to hold a group of shapes
