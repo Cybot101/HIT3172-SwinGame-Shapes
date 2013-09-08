@@ -2,7 +2,8 @@
  *		SwinGame :: Shape Drawing Example
  * 
  * @author	Kyle Harris		9621121
- * @version 
+ * @version 1.0		2/9/2013
+ * @version 1.1		7/9/2013
  *
  * for, HIT3172 Object Orientated Programming
  *
@@ -10,12 +11,12 @@
  *************************************************************
  *
  * Shape Class - Implementation
- *
+ *	
+ * Implements an abstract Shape class that can be extended to 
+ * draw other shapes.
  */
 
 #include "Shape.h"
-
-#include "Graphics.h"
 
 /**
  * Constructor.
@@ -25,18 +26,6 @@ Shape::Shape(void)
 { // Default constructor. Create our object, but no defaults set
 }
 
-Shape::Shape(point2d _aPos)
-{ // Create object and set default position
-	_position = _aPos;
-}
-
-Shape::Shape(point2d _aPos, int _aW, int _aH)
-{
-	_position = _aPos;
-	_width = _aW;
-	_height = _aH;
-}
-
 /**
  * Destructor
  * Destroys some stuff that was created
@@ -44,6 +33,11 @@ Shape::Shape(point2d _aPos, int _aW, int _aH)
 Shape::~Shape(void)
 {
 }
+
+/*
+ * Public access getter & setter methods.
+ * Allows (limited) access to private fields when required.
+ */
 
 color Shape::get_colour()
 {
@@ -85,6 +79,9 @@ void Shape::set_height(int _aHeight)
 	_height = _aHeight;
 }
 
+/*
+ * Indicates whether this shape is within the point specified.
+*/
 bool Shape::is_at(point2d _aPos)
 {
 	return	_aPos.x >= _position.x &&
@@ -93,13 +90,3 @@ bool Shape::is_at(point2d _aPos)
 			_aPos.y <= _position.y + _height;
 }
 
-void Shape::draw()
-{
-	rectangle rect;
-	
-	fill_rectangle(
-		_colour, 
-		_position.x, _position.y, 
-		_width, _height
-		);
-}

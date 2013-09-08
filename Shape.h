@@ -2,7 +2,8 @@
  *		SwinGame :: Shape Drawing Example
  * 
  * @author	Kyle Harris		9621121
- * @version 
+ * @version 1.0		2/9/2013
+ * @version 1.1		7/9/2013
  *
  * for, HIT3172 Object Orientated Programming
  *
@@ -11,9 +12,8 @@
  *
  * Shape Class - Interface definition
  *
- * Defines the Shape class to build "shape" objects to be drawn and interacted
- * with on the sceen.
- *
+ * An abstract Shape class that can be extended to draw other shapes. 
+ * Shapes can be drawn and interacted with on the sceen.
  * Shapes can have different colours, size, location, and can be 'checked for' at a location.
  *
  */
@@ -23,10 +23,11 @@
 #define _H_SHAPE
 
 #include "Colors.h"
+#include "Graphics.h"		// SwinGame graphcs library
 
 class Shape
 {
-private:
+protected:
 	
 	// Declare private fields
 	color	_colour;
@@ -38,13 +39,9 @@ public:
 
 	// Constructor
 	Shape(void);
-
-	Shape(point2d _aPos);
-
-	Shape(point2d _aPos, int _aW, int _aH);
-
+	
 	// Destructor - cleans stuff up
-	~Shape(void);
+	virtual ~Shape(void);
 
 	/*
 	 * Public access methods
@@ -63,7 +60,9 @@ public:
 
 	bool is_at(point2d _aPos);
 
-	void draw();
+	// Abstract methods to be implemented in child classes
+	virtual void draw() = 0;		// Draw shape
+	virtual void highlight() = 0;	// Highlight shape
 
 };
 

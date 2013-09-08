@@ -3,6 +3,7 @@
  * 
  * @author	Kyle Harris		9621121
  * @version 1.0		25/8/2013
+ * @version 1.5		7/9/2013	Added group selection option
  *
  * for, HIT3172 Object Orientated Programming
  *
@@ -25,7 +26,7 @@
  */
 Drawing::Drawing(void)
 {
-	// No need to construct anything, carry on plz...
+	_selectedShape = NULL;
 }
 
 /**
@@ -41,7 +42,6 @@ Drawing::~Drawing(void)
 	}
 }
 
-
 /**
  * Adds shapes to the _shape collection
  */
@@ -50,24 +50,61 @@ void Drawing::add_shape(Shape *_aToAdd)
 	_shapes.push_back(_aToAdd);
 }
 
+Shape * Drawing::selected_shape()
+{
+	return _selectedShape;
+}
+
+/*
+ * Public getter returns collection of all selected shapes
+ */
+std::vector<Shape *> Drawing::all_selected_shapes()
+{
+	return _allSelectedShapes;
+}
+
 /**
  * Select a shape at a point
  */
 void Drawing::select_shape_at_point(point2d _aPos)
 {
-	// Set _selectedSHapeto a 'null' value first, in case no shape is found (added later)
+	// Set _selectedSHapeto a 'null' value first, in case no shape is found
 	_selectedShape = NULL;
+	_allSelectedShapes.clear();
 
-	for (int i=0; i < _shapes.size(); i++)
-		if (_shapes[i]->is_at(_aPos))
-			_selectedShape = _shapes[i];
+	//for (uint32_t i=0; i < _shapes.size(); i++)
+	for (int i=_shapes.size()-1; i >= 0; i--)		// Selects last shape in list
+		if (_shapes[i]->is_at(_aPos))				// Shapes are 'pushed' onto the start,
+		{
+			//_selectedShape = _shapes[i];	// So the oldest shape is furthest in collection
+			_allSelectedShapes.push_back( _shapes[i] );
+			break;
+		}
 }
 
 /**
- * Draws crap, also known as shapes...
+ * Select all shapes at a point
+ */
+void Drawing::select_all_shapes_at_point(point2d _aPos)
+{
+	// Set _selectedSHapeto a 'null' value first, in case no shape is found
+	_selectedShape = NULL;
+	_allSelectedShapes.clear();
+
+	for (uint32_t i=0; i < _shapes.size(); i++)		// If shape is at point,
+		if (_shapes[i]->is_at(_aPos))				// Add shape to selected collection
+			_allSelectedShapes.push_back( _shapes[i] );
+}
+
+/**
+ * Draws shapes by calling the Draw method on each shape in the collection.
+ * The Draw method is abstracted for each of the different shapes.
  */
 void Drawing::draw()
 {
 	for (int i=0; i < _shapes.size(); i++)
-		_shapes[i]->draw();
+	{
+		Shape * s =_shapes[i];
+		s->draw();
+	}
 }

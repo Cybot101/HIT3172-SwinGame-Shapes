@@ -30,7 +30,8 @@ private:
 	// Store list of shape objects
 	std::vector<Shape *> _shapes;
 
-	Shape *_selectedShape;
+	Shape					*_selectedShape;
+	std::vector<Shape *>	_allSelectedShapes;	//Collection to hold all shapes selected
 
 	// Declare properties and methods that are public and available for external access
 public:
@@ -42,9 +43,11 @@ public:
 	~Drawing(void);
 
 	Shape *selected_shape();
+	std::vector<Shape *> all_selected_shapes();
 
 	void add_shape(Shape *_aToAdd);
 	void select_shape_at_point(point2d _aPos);
+	void select_all_shapes_at_point(point2d _aPos);
 	void draw();
 
 };

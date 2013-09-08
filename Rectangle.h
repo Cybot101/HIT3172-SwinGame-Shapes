@@ -7,10 +7,10 @@
 class Rectangle : public Shape
 {
 public:
-	Rectangle(void);
-	~Rectangle(void);
-
-private:
+	
+	void	make_square();
+	void	draw();
+	void	highlight();
 
 };
 
